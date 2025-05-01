@@ -1,0 +1,29 @@
+{
+  "name": "nutribyte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node nutriserver.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/on-wins/nutribyte.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/on-wins/nutribyte/issues"
+  },
+  "homepage": "https://github.com/on-wins/nutribyte#readme",
+  "description": "",
+  "dependencies": {
+    "expresss": "^0.0.0",
+    "heroku": "^8.7.1",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.1",
+    "mongoose-int32": "^0.6.0",
+    "mongosh": "^2.5.0"
+  }
+}
