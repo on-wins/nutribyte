@@ -1,0 +1,121 @@
+body {
+    font-family: Arial;
+    background-color: #f4f7f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    background: white;
+    box-sizing: border-box;
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 2rem 0;
+}
+
+.food-card {
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    min-width: 350px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,0.05);
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+button.delete {
+    background-color: #e53935;
+    margin-left: 1rem;
+}
+
+button.delete:hover {
+    background-color: #c62828;
+}
+
+button.description {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+    padding: 0.75 rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.description:hover {
+    background-color: #e8f5e9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+select {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}

@@ -19,6 +19,8 @@
   "homepage": "https://github.com/on-wins/nutribyte#readme",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "expresss": "^0.0.0",
     "heroku": "^8.7.1",
     "mongodb": "^6.16.0",

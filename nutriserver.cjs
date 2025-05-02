@@ -1,6 +1,11 @@
 const express = require("express");
 
 const app = express();
+
+const cors = require('cors');
+app.use(cors());
+app.use(express.json());
+
 const mongodbRoutes = require("./nutridb.cjs");
 
 // Serve static files from the public dir

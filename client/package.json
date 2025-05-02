@@ -1,0 +1,31 @@
+{
+    "name": "usercode",
+    "version": "1.0.0",
+    "description": "",
+    "source": "src/index.html",
+    "type": "module",
+    "jest": {
+        "transform": {
+            "^.+\\.(js|jsx)$": "babel-jest"
+        }
+    },
+    "scripts": {
+        "start": "parcel src/index.html --open",
+        "start-dev": "parcel src/index.html --open -p 8080",
+        "build": "parcel build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.22.1",
+        "parcel": "^2.3.2",
+        "process": "^0.11.10"
+    },
+    "dependencies": {
+        "mongosh": "^2.4.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "proxy": "http://localhost:8080"
+}
