@@ -1,0 +1,122 @@
+body {
+  color: #333;
+  background-color: #f4f7f8;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.container {
+  box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem;
+}
+
+.divider {
+  background-color: #ccc;
+  border: none;
+  height: 2px;
+  margin: 2rem 0;
+}
+
+.food-card {
+  background-color: #fefefe;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.main {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  display: flex;
+}
+
+.left-panel, .right-panel {
+  min-width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, .05);
+  background: #fff;
+  border-radius: 8px;
+  flex: 1;
+  padding: 1rem;
+}
+
+h1 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color .2s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+button.delete {
+  background-color: #e53935;
+  margin-left: 1rem;
+}
+
+button.delete:hover {
+  background-color: #c62828;
+}
+
+button.description {
+  text-align: left;
+  color: #2e7d32;
+  width: 100%;
+  padding: .75 rem;
+  background-color: #fff;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color .2s, box-shadow .2s;
+  display: block;
+}
+
+button.description:hover {
+  background-color: #e8f5e9;
+  box-shadow: 0 2px 6px #00000014;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+select {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=client.9f367d21.css.map */
