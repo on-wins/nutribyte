@@ -9,14 +9,14 @@ app.use(express.json());
 const mongodbRoutes = require("./nutridb.cjs");
 
 // Serve static files
-app.use(express.static(path.join(__dirname, "client/build"))); 
+app.use(express.static(path.join(__dirname, "client/dist"))); 
 
 //API routes
 app.use("/api", mongodbRoutes);
 
 // frontend
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "client/dist", "index.html"));
 });
 
 // Start the web server
