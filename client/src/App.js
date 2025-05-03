@@ -34,7 +34,7 @@ function App() {
                 if (searchTerm) query.append('searchString', searchTerm);
                 if (selectedCategory && selectedCategory !== "All") query.append('category', selectedCategory);
         
-                const res = await fetch(`http://localhost:8080/api/food?${query}`);
+                const res = await fetch(`/api/food?${query}`);
                 const data = await res.json();
         
                 setFilteredFoods(data);
@@ -79,7 +79,7 @@ function App() {
     useEffect(() => {
         foodLog.forEach(entry => {
             if (!nutrientCache[entry.fdcId]) {
-                fetch(`http://localhost:8080/api/nutrients/${entry.fdcId}`)
+                fetch(`/api/nutrients/${entry.fdcId}`)
                     .then(res => res.json())
                     .then(data => {
                         setNutrientCache(prev => ({
@@ -97,7 +97,7 @@ function App() {
             setFoodLog([]);
             return;
         }
-        fetch(`http://localhost:8080/api/log/${userId}`)
+        fetch(`/api/log/${userId}`)
             .then(res => res.json())
             .then(data => setFoodLog(data))
             .catch(err => console.error(err));
@@ -144,7 +144,7 @@ function App() {
                                             setSelectedFood(food);
                                             setFoodNutrients([]);
                                             setLoadingNutrients(true);
-                                            fetch(`http://localhost:8080/api/nutrients/${food.fdcId}`)
+                                            fetch(`/api/nutrients/${food.fdcId}`)
                                                 .then(res => res.json())
                                                 .then(data => {setFoodNutrients(data); setLoadingNutrients(false);})
                                                 .catch(err => {console.error(err); setLoadingNutrients(false)});
@@ -168,7 +168,7 @@ function App() {
                                             setFoodLog([...foodLog, { fdcId: food.fdcId, count: 1 }]);
                                         }
                                         if (!nutrientCache[food.fdcId]) {
-                                            fetch(`http://localhost:8080/api/nutrients/${food.fdcId}`)
+                                            fetch(`/api/nutrients/${food.fdcId}`)
                                                 .then(res => res.json())
                                                 .then(data => {
                                                     setNutrientCache(prev => ({
@@ -193,7 +193,7 @@ function App() {
                             <h2>Daily Food Log</h2>
                             <button
                                 onClick={() => {
-                                    fetch(`http://localhost:8080/api/log/${userId}`, {
+                                    fetch(`/api/log/${userId}`, {
                                         method: 'POST',
                                         headers: { 'Content-Type': 'application/json' },
                                         body: JSON.stringify(foodLog)
