@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node nutriserver.cjs",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "node nutriserver.cjs"
   },
   "repository": {
     "type": "git",
