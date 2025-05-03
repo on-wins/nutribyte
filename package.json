@@ -28,5 +28,8 @@
     "mongoose": "^8.14.1",
     "mongoose-int32": "^0.6.0",
     "mongosh": "^2.5.0"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
