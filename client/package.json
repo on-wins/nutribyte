@@ -12,7 +12,7 @@
     "scripts": {
         "start": "parcel src/index.html --open",
         "start-dev": "parcel src/index.html --open -p 8080",
-        "build": "parcel build"
+        "build": "parcel build index.html"
     },
     "keywords": [],
     "author": "",
